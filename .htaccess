@@ -1,12 +1,11 @@
-
-# BEGIN WordPress
+# BEGIN
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /buba/
-RewriteRule ^index\.php$ - [L]
+RewriteBase /kbbi
+RewriteRule ^home\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /buba/index.php [L]
+RewriteRule . /kbbi/homehtml [L]
 </IfModule>
 
-# END WordPress
+# END
