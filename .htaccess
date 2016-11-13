@@ -1,7 +1,7 @@
 # BEGIN
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /kbbi
+RewriteBase /kbbi_project
 RewriteRule ^home\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
