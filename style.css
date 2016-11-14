@@ -2,21 +2,23 @@
 
 
 html, body {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand Book', sans-serif;
 	font-size:14px;
 	margin:0;
 	overflow-x:hidden;
 	background-color:#fff;
 	line-height: 1.8;
+	color:#000;
 }
 
 h1 {
 	font-size: 30px;
 	font-family: 'Comfortaa', cursive;
+	color:#D21D5E;
 }
 
 h2 {
-	font-size: 23px;
+	font-size: 30px;
 }
 
 h3 {
@@ -28,15 +30,106 @@ h4 {
 }
 
 h5 {
-	font-size: 17px;
+	font-size: 14px;
 }
 
 h6 {
-	font-size: 15px;
+	font-size: 14px;
+}
+
+p {
+	font-size: 14px;
+	font-family: 'Quicksand Book', sans-serif, cursive;
+	color:#000;
+	text-align:justify;
+	text-justify: auto;
+	width: 34%;
+	margin-top: 40px;
 }
 
 p, h1, h2, h3, h4, h5, h6, ul {
 	margin-bottom: 20px;
+}
+
+/*dropdown menu*/
+.dropbtn {
+    background-color: #fff;
+    color: #414042;
+	padding-top:14px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    cursor: pointer;
+	border:none;
+	font-family: 'Quicksand Bold', sans-serif;
+	font-size:16px;
+	font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-family: 'Quicksand Bold', sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	z-index:9999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #006600;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-family: 'Quicksand Bold', sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	z-index:9998;
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 a:hover {
+	background-color: #006600;
+}
+
+.dropdown:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #006600;
+	color:#fff;
+	border:none;
 }
 
 .container {
@@ -55,9 +148,9 @@ p, h1, h2, h3, h4, h5, h6, ul {
 	border: 0;
 	line-height: 1.42857143 !important;
 	border-radius: 0;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand Bold', sans-serif;
 	font-size:16px;
-	font-style:bold;
+	font-weight: bold;
   }
   
 .navbar li a, .navbar .navbar-brand {
@@ -79,7 +172,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
 	position:fixed;
 	margin-top:0;
 	margin-left:0;
-	height:20%;
+	height:21%;
 	width:100%;
 	background-color:#fff;
 }
@@ -107,8 +200,8 @@ a.btn-social, .btn-social {
     max-height: 100px;
     max-width: 100px;
 	padding-top:30%;
-	padding-left:3%;
-	padding-right:3%;
+	padding-left:8%;
+	padding-right:8%;
 }
 
 /* Search */
@@ -140,8 +233,8 @@ a.btn-social, .btn-social {
 	width: auto;
 	margin-left: 0;
 	min-height:100%;
-	max-height:100%;
 	overflow: hidden;
+	height:inherit;
 }
 
 .carousel-inner>.item>a>img,.carousel-inner>.item>img {
@@ -150,7 +243,6 @@ a.btn-social, .btn-social {
 	top:0;
 	left:0;
 	width: 100%;
-	line-height: 1;
 	-webkit-transition:.6s ease-in-out left;
 	-o-transition:.6s ease-in-out left;
 	transition:.6s ease-in-out left;
@@ -190,4 +282,169 @@ a.btn-social, .btn-social {
 	background-image:linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 	background-repeat:repeat-x
+}
+
+/* about */
+.container-konten{
+	background-color:#f6d3b3;
+	position:absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	height:80%;
+}
+
+.konten-about {
+	position:absolute;
+	top:20%;
+	left:16%;
+}
+
+.gambar-tepi {
+	position:fixed;
+	left:-130px;
+	top:0;
+	z-index:1000;
+}
+
+.foto-kanan {
+	position:absolute;
+	right:0;
+	top:-2px;
+	z-index:1001;
+	width:60%;
+	height:100%;
+}
+
+/*Sejarah Batik Betawi*/
+.sejarahbb-container {
+	background-color:#fff;
+	position:absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	height:80%;
+}
+
+.konten-sejarah {
+	position:absolute;
+	top:10%;
+	left:16%;
+}
+
+.konten-sejarahb {
+	position:absolute;
+	top:10%;
+	left:0;
+	width:400px;
+	height: 430px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	font-family: 'Quicksand Book', sans-serif, cursive;
+	color:#000;
+	text-align:justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.foto-kanan-sejarah {
+	position:absolute;
+	right:-10%;
+	top:-2px;
+	z-index:10;
+	width:60%;
+	height:100%;
+	overflow:hidden;
+}
+
+/*Motif Batik Betawi*/
+.motifbb-container {
+	background-color:#f6d3b3;
+	position:absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	height:80%;
+}
+
+.konten-motifbbjudul {
+	position:absolute;
+	top:20%;
+	left:18%;
+}
+
+.konten-motifbbisi{
+	position:absolute;
+	top:10%;
+	left:0;
+	width: 400px;
+	height: 430px;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: 'Quicksand Book', sans-serif, cursive;
+	color:#000;
+	text-align:justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.foto-kanan-motifbb {
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:10;
+	width:60%;
+	height:100%;
+	overflow:hidden;
+}
+
+/*Motif Batik Monas*/
+.monas-container {
+	background-color:#fff;
+	position:absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	height:80%;
+}
+
+.konten-monasjudul {
+	position:absolute;
+	top:30%;
+	left:18%;
+	font-size: 30px;
+	font-family: 'Comfortaa', cursive;
+	color:#EF8C1E;
+}
+
+.konten-monasisi{
+	position:absolute;
+	top:10%;
+	left:0;
+	width: 300px;
+	height: 350px;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: 'Quicksand Book', sans-serif, cursive;
+	color:#000;
+	font-size:14px;
+	text-align:justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.foto-kanan-monas {
+	position:absolute;
+	right:-2%;
+	top:0;
+	z-index:10;
+	width:60%;
+	height:100%;
+	overflow:hidden;
 }
