@@ -8,7 +8,7 @@
 		<link rel='shortcut icon' href="img/favicon.ico" type='image/x-icon'/>
 		
 		<!-- Judul tab browser -->
-		<title>Motif Batik Betawi - KBBI</title>
+		<title>Tutorial - KBBI</title>
 		
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet" >
