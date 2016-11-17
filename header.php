@@ -73,7 +73,7 @@
 					</div>
 					<div class="col-md-2">
 						<div class="search-header">
-							<form method="get" action="search">
+							<form method="get" action="http://www.google.com">
 								<div class="input-group stylish-input-group">
 									<input type="text" class="form-control"  placeholder="Search" >
 										<span class="input-group-addon">
