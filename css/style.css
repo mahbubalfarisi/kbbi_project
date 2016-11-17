@@ -1,8 +1,23 @@
 /**** This CSS is Made for KBBI Project ****/
 
+@font-face {
+    font-family: Comfortaa;
+    src: local("./fonts/Comfortaa-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Quicksand Book";
+    src: local("fonts/Quicksand Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Quicksand Bold";
+    src: local("fonts/Quicksand Bold.otf") format("opentype");
+}
+
 
 html, body {
-	font-family: 'Quicksand Book', sans-serif;
+	font-family: "Quicksand Book", sans-serif !important;
 	font-size:14px;
 	margin:0;
 	overflow-x:hidden;
@@ -13,7 +28,7 @@ html, body {
 
 h1 {
 	font-size: 30px;
-	font-family: 'Comfortaa', cursive;
+	font-family: Comfortaa, sans-serif !important;
 	color:#D21D5E;
 }
 
@@ -39,7 +54,7 @@ h6 {
 
 p {
 	font-size: 14px;
-	font-family: 'Quicksand Book', sans-serif, cursive;
+	font-family: "Quicksand Book", sans-serif;
 	color:#000;
 	text-align:justify;
 	text-justify: auto;
@@ -62,7 +77,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
     font-size: 16px;
     cursor: pointer;
 	border:none;
-	font-family: 'Quicksand Bold', sans-serif;
+	font-family: "Quicksand Bold", sans-serif;
 	font-size:16px;
 	font-weight: bold;
 }
@@ -78,7 +93,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
     background-color: #f9f9f9;
     width: 120%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	font-family: 'Quicksand Bold', sans-serif;
+	font-family: "Quicksand Bold", sans-serif;
 	font-size:14px;
 	font-weight: bold;
 	z-index:9999;
@@ -105,7 +120,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
     background-color: #f9f9f9;
     width: 200%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	font-family: 'Quicksand Bold', sans-serif;
+	font-family: "Quicksand Bold", sans-serif;
 	font-size:14px;
 	font-weight: bold;
 	z-index:9998;
@@ -147,7 +162,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
 	border: 0;
 	line-height: 1.42857143 !important;
 	border-radius: 0;
-	font-family: 'Quicksand Bold', sans-serif;
+	font-family: "Quicksand Bold", sans-serif;
 	font-size:16px;
 	font-weight: bold;
   }
@@ -236,6 +251,7 @@ a.btn-social, .btn-social {
 	left:0;
 	width:100%;
 	height:100%;
+	z-index:888;
 }
 
 .carousel-inner {
@@ -244,6 +260,7 @@ a.btn-social, .btn-social {
 	min-height:100%;
 	overflow: hidden;
 	height:100%;
+	z-index:888;
 }
 
 .carousel-inner>.item>a>img,.carousel-inner>.item>img {
@@ -269,7 +286,8 @@ a.btn-social, .btn-social {
 	text-shadow:0 1px 2px rgba(0,0,0,.6);
 	background-color:rgba(0,0,0,0);
 	filter:alpha(opacity=50);
-	opacity:.5
+	opacity:.5;
+	z-index:888;
 }
 
 .carousel-control.left {
@@ -350,7 +368,7 @@ a.btn-social, .btn-social {
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
-	font-family: 'Quicksand Book', sans-serif, cursive;
+	font-family: "Quicksand Book", sans-serif;
 	color:#000;
 	text-align:justify;
 	text-justify: auto;
@@ -365,7 +383,6 @@ a.btn-social, .btn-social {
 	z-index:10;
 	width:60%;
 	height:100%;
-	overflow:hidden;
 }
 
 /*Motif Batik Betawi*/
@@ -389,11 +406,11 @@ a.btn-social, .btn-social {
 	top:10%;
 	left:0;
 	width: 400px;
-	height: 430px;
+	height: 330px;
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
-	font-family: 'Quicksand Book', sans-serif, cursive;
+	font-family: "Quicksand Book", sans-serif;
 	color:#000;
 	text-align:justify;
 	text-justify: auto;
@@ -426,7 +443,7 @@ a.btn-social, .btn-social {
 	top:30%;
 	left:18%;
 	font-size: 30px;
-	font-family: 'Comfortaa', cursive;
+	font-family: Comfortaa, sans-serif;
 	color:#EF8C1E;
 }
 
@@ -439,7 +456,7 @@ a.btn-social, .btn-social {
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
-	font-family: 'Quicksand Book', sans-serif, cursive;
+	font-family: "Quicksand Book", sans-serif;
 	color:#000;
 	font-size:14px;
 	text-align:justify;
@@ -473,7 +490,7 @@ a.btn-social, .btn-social {
 	top:20%;
 	left:60%;
 	font-size: 30px;
-	font-family: 'Comfortaa', cursive;
+	font-family: Comfortaa, sans-serif;
 	color:#D21D5E ;
 }
 
@@ -486,7 +503,7 @@ a.btn-social, .btn-social {
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
-	font-family: 'Quicksand Book', sans-serif, cursive;
+	font-family: "Quicksand Book", sans-serif;
 	color:#000;
 	font-size:14px;
 	text-align:justify;
@@ -533,7 +550,7 @@ a.btn-social, .btn-social {
 	top:20%;
 	left:18%;
 	font-size: 30px;
-	font-family: 'Comfortaa', cursive;
+	font-family: Comfortaa, sans-serif;
 	color:#006600;
 }
 
@@ -546,7 +563,7 @@ a.btn-social, .btn-social {
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
-	font-family: 'Quicksand Book', sans-serif, cursive;
+	font-family: "Quicksand Book", sans-serif;
 	color:#000;
 	font-size:14px;
 	text-align:justify;
@@ -580,7 +597,7 @@ a.btn-social, .btn-social {
 	top:30%;
 	left:60%;
 	font-size: 30px;
-	font-family: 'Comfortaa', cursive;
+	font-family: Comfortaa, sans-serif;
 	color:#D21D5E ;
 }
 
@@ -593,7 +610,7 @@ a.btn-social, .btn-social {
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
-	font-family: 'Quicksand Book', sans-serif, cursive;
+	font-family: "Quicksand Book", sans-serif;
 	color:#000;
 	font-size:14px;
 	text-align:justify;
@@ -627,7 +644,7 @@ a.btn-social, .btn-social {
 	top:20%;
 	left:18%;
 	font-size: 30px;
-	font-family: 'Comfortaa', cursive;
+	font-family: Comfortaa, sans-serif;
 	color:#EF8C1E;
 }
 
@@ -636,11 +653,11 @@ a.btn-social, .btn-social {
 	top:60%;
 	left:0;
 	width: 300px;
-	height: 350px;
+	height: 290px;
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
-	font-family: 'Quicksand Book', sans-serif, cursive;
+	font-family: "Quicksand Book", sans-serif;
 	color:#000;
 	font-size:14px;
 	text-align:justify;
@@ -676,5 +693,557 @@ a.btn-social, .btn-social {
 	z-index:10;
 	width:60%;
 	height:100%;
+	overflow:hidden;
+}
+
+/* Member */
+.member-container {
+	background-color:#f6d3b3;
+	position:absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	height:80%;
+}
+
+.konten-memberjudul {
+	position:absolute;
+	top:20%;
+	left:20%;
+	font-size: 30px;
+	font-family: Comfortaa, sans-serif;
+	color:#D21D5E;
+}
+
+.logomember1 {
+	position:relative;
+	padding:0;
+}
+
+.logomember2 {
+	position:relative;
+	padding:0;
+}
+
+.konten-memberjuduljudul {
+	position:absolute;
+	top:10%;
+	left:3%;
+	width: 300px;
+	height: auto;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: "Quicksand Book", sans-serif;
+	color:#D21D5E;
+	font-size:14px;
+	text-align:justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.konten-memberisi {
+	position:absolute;
+	top:0;
+	left:-20%;
+	width: 300px;
+	height: 420px;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000;
+	font-size:14px;
+	text-align:center;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.buttonnext {
+  background-color: #006600;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonnext span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonnext span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonnext:hover span {
+  padding-right: 25px;
+}
+
+.buttonnext:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.foto-kanan-member {
+	position:absolute;
+	right:-2%;
+	top:0;
+	z-index:10;
+	width:60%;
+	height:100%;
+	overflow:hidden;
+}
+
+.member2-container {
+	background-color:#f6d3b3;
+	position:absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	height:80%;
+}
+
+.konten-member2judul {
+	position:absolute;
+	top:5%;
+	left:60%;
+	font-size: 30px;
+	font-family: Comfortaa, sans-serif;
+	color:#EF8C1E;
+	text-align:center;
+}
+
+.logomember2 {
+	position:relative;
+	padding:0;
+}
+
+.konten-member2juduljudul {
+	position:absolute;
+	top:10%;
+	left:3%;
+	width: 300px;
+	height: auto;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: "Quicksand Book", sans-serif;
+	color:#EF8C1E;
+	font-size:14px;
+	text-align:center;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.konten-member2isi {
+	position:absolute;
+	top:60%;
+	left:0;
+	width: 300px;
+	height: 350px;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000;
+	font-size:14px;
+	text-align:inherit;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.buttonnext2 {
+  background-color: #006600;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonnext2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonnext2 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonnext2:hover span {
+  padding-right: 25px;
+}
+
+.buttonnext2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.foto-kanan-member2 {
+	position:absolute;
+	left:-2%;
+	top:0;
+	z-index:10;
+	width:60%;
+	height:100%;
+	overflow:hidden;
+}
+
+/*Contact*/
+.contact-container {
+	background-color:#fff;
+	position:absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	height:80%;
+}
+
+.konten-contactjudul {
+	position:absolute;
+	top:30%;
+	left:18%;
+	font-size: 30px;
+	font-family: Comfortaa, sans-serif;
+	color:#D21D5E;
+}
+
+.konten-contactisi{
+	position:absolute;
+	top:10%;
+	left:0;
+	width: 300px;
+	height: 350px;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000;
+	font-size:14px;
+	text-align:justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.foto-kanan-contact {
+	position:absolute;
+	right:-2%;
+	top:0;
+	z-index:10;
+	width:60%;
+	height:100%;
+	overflow:hidden;
+}
+
+/* Tutorial */
+.tutor-container {
+	background-color:#f6d3b3;
+	position:absolute;
+	top:20%;
+	left:0;
+	width:100%;
+	height:80%;
+}
+
+.konten-tutorjudul {
+	position:absolute;
+	margin-top:10%;
+	left:22%;
+}
+
+.konten-tutorisi{
+	position:absolute;
+	top:10%;
+	left:0;
+	width: 300px;
+	height: 430px;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000;
+	text-align:justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.foto-kanan-tutor {
+	position:relative;
+	left:50%;
+	top:0;
+	z-index:1002;
+	width:60%;
+	height:100%;
+	overflow:hidden;
+}
+
+.gambar-tepirel {
+	position:absolute;
+	left:-130px;
+	top:-25%;
+	z-index:1000;
+}
+
+.foto-kanan-kiat-flip {
+	position:relative;
+	left:-5%;
+	top:0;
+	z-index:10;
+	width:56%;
+	height:100%;
+	overflow:hidden;
+}
+
+.konten-kiat2isi {
+	position:absolute;
+	top:70%;
+	left:46%;
+	font-size: 14px;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000 ;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+	text-align: justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+	width: 250px;
+	height: auto;
+}
+
+.konten-kiat2isi2 {
+	position:absolute;
+	top:10%;
+	left:68%;
+	font-size: 14px;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000 ;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+	text-align: justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+	width: 200px;
+	height: auto;
+}
+
+.konten-kiat2isi3 {
+	position:absolute;
+	top:70%;
+	left:80%;
+	font-size: 14px;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000 ;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+	text-align: justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+	width: 200px;
+	height: auto;
+}
+
+.foto-tutor11 {
+	position:absolute;
+	left:48%;
+	top:5%;
+	z-index:19;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+.foto-tutor12 {
+	position:absolute;
+	left:63%;
+	top:21%;
+	z-index:19;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+.foto-tutor13 {
+	position:absolute;
+	left:80%;
+	top:5%;
+	z-index:19;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+.ikon-tutor11 {
+	position:absolute;
+	left:43%;
+	top:71%;
+	z-index:18;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+}
+
+.ikon-tutor12 {
+	position:absolute;
+	left:65%;
+	top:11%;
+	z-index:19;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+}
+
+.ikon-tutor13 {
+	position:absolute;
+	left:78%;
+	top:70%;
+	z-index:19;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+}
+
+.konten-kiat11{
+	position:absolute;
+	top:10%;
+	left:30%;
+	width: 300px;
+	height: 430px;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000;
+	text-align:justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+}
+
+.foto-kanan-kiat-bawah {
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:1002;
+	width:48%;
+	height:100%;
+	overflow:hidden;
+}
+
+.kiat-bawah-container {
+	background-color:#f6d3b3;
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+
+.kiat-bawah-isi {
+	position:absolute;
+	top:10%;
+	left:10%;
+	font-size: 14px;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000 ;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+	text-align: justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+	width: 250px;
+	height: auto;
+}
+
+.kiat-bawah-isi2 {
+	position:absolute;
+	top:73%;
+	left:35%;
+	font-size: 14px;
+	font-family: "Quicksand Book", sans-serif;
+	color:#000 ;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+	text-align: justify;
+	text-justify: auto;
+	z-index:20;
+	line-height: 1.8;
+	width: 250px;
+	height: auto;
+}
+
+.foto-kiat-bawah11 {
+	position:absolute;
+	left:10%;
+	bottom:0;
+	z-index:19;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+.foto-kiat-bawah12 {
+	position:absolute;
+	left:35%;
+	top:3%;
+	z-index:19;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+
+
+.ikon-kiat-bawah11 {
+	position:absolute;
+	left:7%;
+	top:10%;
+	z-index:18;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+}
+
+.ikon-kiat-bawah12 {
+	position:absolute;
+	left:33%;
+	top:73%;
+	z-index:19;
+	width:20px;
+	height:20px;
 	overflow:hidden;
 }
