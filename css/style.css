@@ -29,7 +29,10 @@
   font-family: Quicksand Light Oblique;
   src: url("./fonts/Quicksand_Light_Oblique.otf") format("opentype");
 }
-
+@font-face {
+  font-family: 'King-Basil-Lite';
+  src: url("./fonts/King-Basil-Lite.otf") format("OpenType");
+}
 
 html, body {
 	font-size:14px;
@@ -180,18 +183,6 @@ p.oopr-def {
 	top:60%;
 	left:0;
 	width: 300px;
-}
-
-p.member-def {
-	top:0;
-	left:-200px;
-	width: 300px;
-	text-align: center;
-}
-
-p.member-def > a {
-	color: #000;
-	padding-bottom: 5px;
 }
 
 p.kiat-atas-isi-11 {
@@ -515,8 +506,8 @@ a.btn-social, .btn-social {
 }
 
 .member-main {
-	top:20%;
-	left:20%;
+	top:9%;
+	left:15%;
 	text-align: center;
 }
 
@@ -563,11 +554,11 @@ a.btn-social, .btn-social {
 /* FOTO KANAN-KIRI */
 .about-foto-kanan > img {
 	position: fixed;
-	right:-40%;
+	right:-5%;
 	top:-2px;
 	z-index:1001;
-	width:100%;
-	height:auto;
+	height:100%;
+	width:auto;
 }
 
 .sejarah-foto-kanan > img {
@@ -637,7 +628,7 @@ a.btn-social, .btn-social {
 	height:588px;
 }
 
-.monas-foto-kanan > img, .oopr-foto-kanan > img, .member-foto-kanan > img {
+.monas-foto-kanan > img, .oopr-foto-kanan > img {
 	position:absolute;
 	right:-2%;
 	top:0;
@@ -662,14 +653,6 @@ a.btn-social, .btn-social {
 	z-index:10;
 	width:auto;
 	height:588px;
-}
-
-.logomember > img {
-	position:relative;
-	padding:0;
-	left: 0;
-	width:auto;
-	height:100px;
 }
 
 .buttonnext {
@@ -886,4 +869,92 @@ a.btn-social, .btn-social {
 	width:100%;
 	height:auto;
 	z-index:1;
+}
+
+.grid-size {
+	width: 150px;
+	height: 150px;
+}
+
+.grid-member {
+	position: fixed;
+	margin-left: 31%;
+	margin-top: 10%;
+	width: 50%;
+	height: auto;
+	background-color: #fff;
+	padding:0;
+}
+
+.grid-member li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:150px;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:15px;
+    padding:0;
+}
+
+.rig-cell {
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+
+.grid-member li:hover .rig-img {
+    transform:scale(1.05);
+}
+
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 50%;
+    background: #000 no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+.grid-member li:hover .rig-overlay {
+    opacity:0.5;
+}
+
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:left;
+    top: 60%;
+    font-size:14px;
+    font-family: "King-Basil-Lite", sans-serif;
+    font-weight:normal!important;
+    color:#F1F1F2;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+.grid-member li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+.page-pos {
+	display: block;
+	position: fixed;
+	left: 48%;
+	margin-top: 500px;
+	width: 20%;
+	height: auto;
+	padding:0;
+	z-index: 9995;
 }
