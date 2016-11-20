@@ -6,18 +6,32 @@
 }
 
 @font-face {
-    font-family: "Quicksand Book";
-    src: local("fonts/Quicksand Book.otf") format("opentype");
+  font-family: Quicksand Bold;
+  src: url("./fonts/Quicksand_Bold.otf") format("opentype");
 }
-
 @font-face {
-    font-family: "Quicksand Bold";
-    src: local("fonts/Quicksand Bold.otf") format("opentype");
+  font-family: Quicksand Book Oblique;
+  src: url("./fonts/Quicksand_Book_Oblique.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Book;
+  src: url("./fonts/Quicksand_Book.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Dash;
+  src: url("./fonts/Quicksand_Dash.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Light;
+  src: url("./fonts/Quicksand_Light.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand Light Oblique;
+  src: url("./fonts/Quicksand_Light_Oblique.otf") format("opentype");
 }
 
 
 html, body {
-	font-family: "Quicksand Book", sans-serif !important;
 	font-size:14px;
 	margin:0;
 	overflow-x:hidden;
@@ -29,41 +43,135 @@ html, body {
 h1 {
 	font-size: 30px;
 	font-family: Comfortaa, sans-serif !important;
-	color:#D21D5E;
-}
-
-h2 {
-	font-size: 30px;
-}
-
-h3 {
-	font-size: 21px;
-}
-
-h4 {
-	font-size: 19px;
+	color: #000;
 }
 
 h5 {
 	font-size: 14px;
-}
-
-h6 {
-	font-size: 14px;
+	color:#D21D5E;
 }
 
 p {
 	font-size: 14px;
-	font-family: "Quicksand Book", sans-serif;
+	font-family: Quicksand Book;
 	color:#000;
-	text-align:justify;
+	text-align:	justify;
 	text-justify: auto;
-	width: 34%;
-	margin-top: 40px;
+	z-index:20;
+	line-height: 1.8;
+	height: auto;
 }
 
 p, h1, h2, h3, h4, h5, h6, ul {
 	margin-bottom: 20px;
+}
+
+
+p.about-def, p.motif-def {
+	margin-top: 30px;
+	width: 350px;
+}
+
+p.sejarah-def {
+	top: 0;
+	margin-top: 30px;
+	width: 400px;
+	height: 100px;
+	z-index: 200;
+}
+
+p.kiat-def{
+	top:10%;
+	width: 300px;
+	height: 430px;
+}
+
+p.contact-def, p.monas-def {
+	top:10%;
+	left:0;
+	width: 300px;
+}
+
+p.ondel-def, p.tumpal-def {
+	top:10%;
+	left:0;
+	width: 350px;
+}
+
+p.gunung-def {
+	top:0;
+	left:0;
+	width: 350px;
+}
+
+p.oopr-def {
+	top:60%;
+	left:0;
+	width: 300px;
+}
+
+p.member-def {
+	top:0;
+	left:-200px;
+	width: 300px;
+	text-align: center;
+}
+
+p.member-def > a {
+	color: #000;
+	padding-bottom: 5px;
+}
+
+p.kiat-atas-isi-11 {
+	position:absolute;
+	top:70%;
+	left:46%;
+	width: 250px;
+	height: auto;
+}
+
+p.kiat-atas-isi-12 {
+	position:absolute;
+	top:10%;
+	left:68%;
+	width: 200px;
+	height: auto;
+}
+
+p.kiat-atas-isi-13 {
+	position:absolute;
+	top:70%;
+	left:80%;
+	width: 200px;
+	height: auto;
+}
+
+p.kiat-bawah-isi-21 {
+	position:absolute;
+	top:10%;
+	left:10%;
+	width: 250px;
+	height: auto;
+}
+
+p.kiat-bawah-isi-22 {
+	position:absolute;
+	top:73%;
+	left:35%;
+	width: 250px;
+	height: auto;
+}
+
+h1.pink-title {
+	color:#D21D5E;
+}
+
+h1.yellow-title {
+	color: #EF8C1E;
+}
+
+h1.green-title {
+	color: #006600;
 }
 
 /*dropdown menu*/
@@ -74,28 +182,24 @@ p, h1, h2, h3, h4, h5, h6, ul {
     padding-left: 16px;
     padding-bottom: 16px;
     padding-right: 16px;
-    font-size: 16px;
-    cursor: pointer;
-	border:none;
-	font-family: "Quicksand Bold", sans-serif;
-	font-size:16px;
-	font-weight: bold;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+	border:none;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    width: 120%;
+    background-color: #fff;
+    width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	font-family: "Quicksand Bold", sans-serif;
-	font-size:14px;
-	font-weight: bold;
+	font-family: "Comfortaa", Arial;
+	font-size:12px;
 	z-index:9999;
 }
 
@@ -107,73 +211,38 @@ p, h1, h2, h3, h4, h5, h6, ul {
 }
 
 .dropdown-content a:hover {
-	background-color: #006600;
+	background-color: rgba(246, 211, 179,.8);
+	color: #D21D5E;
+}
+
+.dropdown-content > li > a:hover, .dropdown-content > li > a:focus {
+    color: #D21D5E;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 200%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	font-family: "Quicksand Bold", sans-serif;
-	font-size:14px;
-	font-weight: bold;
-	z-index:9998;
-}
-
-.dropdown-content2 a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content2 a:hover {
-	background-color: #006600;
-}
-
-.dropdown:hover .dropdown-content2 {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #006600;
-	color:#fff;
-	border:none;
-}
-
-.container {
-	background-color:#f6d3b3  ;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
 .navbar {
-	margin-bottom: 0;
 	z-index: 9999;
 	border: 0;
 	line-height: 1.42857143 !important;
 	border-radius: 0;
-	font-family: "Quicksand Bold", sans-serif;
-	font-size:16px;
-	font-weight: bold;
+	font-family: "Comfortaa", Arial;
+	font-size:13px;
+	padding-top: 10px !important;
+	letter-spacing: 1;
   }
-  
-.navbar li a, .navbar .navbar-brand {
-	color: #414042  !important;
+
+.navbar-nav>li>a {
+	color: #414042 ;
+	padding-left: 25px !important;
 }
- 
-.navbar-nav li a:hover, .navbar-nav li.active a {
-	color: #fff !important;
-	background-color: #006600!important;
+
+.navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #D21D5E;
 }
 
 .navbar-default .navbar-toggle {
@@ -182,23 +251,34 @@ p, h1, h2, h3, h4, h5, h6, ul {
 	color: #fff !important;
 }
 
-.header-container {
-	position:fixed;
-	margin-top:0;
-	margin-left:0;
-	height:21%;
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #fff;
+    border: none;
+}
+
+#myNavbar {
+	padding-top: 6% !important;
+	padding: 3%;
+}
+
+.header-con {
+	position: fixed;
+	top: 0;
+	margin-left:0 !important;
+	height:112px;
 	width:100%;
+	padding: 0 !important;
 	background-color:#fff;
 }
 
 .header-logo {
-	padding:15%;
+	margin: 5px;
+	margin-top: 0!important;
+	padding-left: 20px !important;
 }
 
 .menu-header {
-	padding-top:8%;
-	padding-left:5%;
-	padding-right:0;
+	padding:0%;
 	text-align:center;
 }
 
@@ -206,16 +286,16 @@ p, h1, h2, h3, h4, h5, h6, ul {
 	padding-top:15%;
 	padding-left:0;
 	padding-right:0;
-	margin-left:-65%;
-	margin-top:-20%;
+	margin: 0;
 }
 
 .search-header {
-	padding-top:15%;
+	padding-top:10%;
 	padding-left:0;
-	padding-right:5%;
-	margin-left:-30%;
+	padding-right:15%;
+	margin-left:0;
 }
+
 
 /* Social */
 a.btn-social, .btn-social {
@@ -224,7 +304,7 @@ a.btn-social, .btn-social {
     max-height: 100px;
     max-width: 100px;
 	padding-top:30%;
-	padding-left:8%;
+	padding-left:0;
 	padding-right:8%;
 }
 
@@ -243,6 +323,7 @@ a.btn-social, .btn-social {
     border:0;
     background:transparent;
 }
+
 
 /* Slide Gambar */
 .carousel {
@@ -275,258 +356,129 @@ a.btn-social, .btn-social {
 }
 
 .carousel-control {
-	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	width:15%;
-	font-size:20px;
-	color:#fff;
-	text-align:center;
-	text-shadow:0 1px 2px rgba(0,0,0,.6);
-	background-color:rgba(0,0,0,0);
-	filter:alpha(opacity=50);
-	opacity:.5;
 	z-index:888;
+	opacity: 1 !important;
+	text-align: center;
+	padding-top: 20%;
 }
 
 .carousel-control.left {
 	left:0;
-	background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-	background-image:-o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-	background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
-	background-image:linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-	background-repeat:repeat-x
+	background-image: none;
+}
+
+.carousel-control .glyphicon-menu-left,.carousel-control .glyphicon-menu-right, {
+	width:60px;
+	height:60px;
+	font-size:60px
 }
 
 .carousel-control.right {
-	right:0;
-	left:auto;
-	background-image:-webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-	background-image:-o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-	background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
-	background-image:linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-	background-repeat:repeat-x
+	background-image: none;
 }
 
-/* about */
-.container-konten{
+
+/* CONTAINER */
+.kbbi-con {
+	position:absolute;
+	top:16% !important;
+	left:0;
+	width:100%;
+	height:84% !important;
+}
+
+.home-con {
+	background-color:#f6d3b3  ;
+}
+
+.pink-con{
 	background-color:#f6d3b3;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
 }
 
-.konten-about {
-	position:absolute;
-	top:20%;
-	left:16%;
-}
-
-.gambar-tepi {
-	position:fixed;
-	left:-130px;
-	top:0;
-	z-index:1000;
-}
-
-.foto-kanan {
-	position:absolute;
-	right:0;
-	top:-2px;
-	z-index:1001;
-	width:60%;
-	height:100%;
-}
-
-/*Sejarah Batik Betawi*/
-.sejarahbb-container {
+.white-con {
 	background-color:#fff;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
 }
 
-.konten-sejarah {
-	position:absolute;
-	top:10%;
+/* ISI */
+.main {
+	position: absolute;
 	left:16%;
+	font-size: 30px;
 }
 
-.konten-sejarahb {
-	position:absolute;
+.about-main, .motif-main {
+	top:20%;
+}
+
+.sejarah-main {
 	top:10%;
-	left:0;
-	width:400px;
-	height: 430px;
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
+	height: 750px;
+	overflow-y: hidden;
 }
 
-.foto-kanan-sejarah {
-	position:absolute;
-	right:-10%;
-	top:-2px;
-	z-index:10;
-	width:60%;
-	height:100%;
+.kiat-main {
+	margin-top:10%;
+	left:22%;
+	height:auto;
 }
 
-/*Motif Batik Betawi*/
-.motifbb-container {
-	background-color:#f6d3b3;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.konten-motifbbjudul {
-	position:absolute;
-	top:20%;
-	left:18%;
-}
-
-.konten-motifbbisi{
-	position:absolute;
-	top:10%;
-	left:0;
-	width: 400px;
-	height: 330px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-}
-
-.foto-kanan-motifbb {
-	position:absolute;
-	right:0;
-	top:0;
-	z-index:10;
-	width:60%;
-	height:100%;
-	overflow:hidden;
-}
-
-/*Motif Batik Monas*/
-.monas-container {
-	background-color:#fff;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.konten-monasjudul {
-	position:absolute;
+.contact-main {
 	top:30%;
 	left:18%;
-	font-size: 30px;
-	font-family: Comfortaa, sans-serif;
-	color:#EF8C1E;
 }
 
-.konten-monasisi{
-	position:absolute;
-	top:10%;
-	left:0;
-	width: 300px;
-	height: 350px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	font-size:14px;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-}
-
-.foto-kanan-monas {
-	position:absolute;
-	right:-2%;
-	top:0;
-	z-index:10;
-	width:60%;
-	height:100%;
-	overflow:hidden;
-}
-
-/*Motif Batik Ondel-Ondel*/
-.ondel-container {
-	background-color:#f6d3b3  ;
-	position:absolute;
+.monas-main, .tumpal-main, .oopr-main {
 	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
+	left:18%;
 }
 
-.konten-ondeljudul {
-	position:absolute;
+.ondel-main {
 	top:20%;
 	left:60%;
-	font-size: 30px;
-	font-family: Comfortaa, sans-serif;
-	color:#D21D5E ;
 }
 
-.konten-ondelisi {
-	position:absolute;
-	top:10%;
-	left:0;
-	width: 350px;
-	height: 400px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	font-size:14px;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
+.gunung-main {
+	top:30%;
+	left:60%;
 }
 
-.foto-kanan-ondel {
-	position:absolute;
-	left:-2%;
-	top:0;
-	z-index:10;
-	width:60%;
-	height:100%;
-	overflow:hidden;
+.member-main {
+	top:20%;
+	left:20%;
+	text-align: center;
 }
 
-.gambar-tepi-flip {
+.member2-main {
+	top:5%;
+	left:60%;
+	text-align: center;
+}
+
+/* SEGITIGA */
+.yellow-segitiga, .pink-segitiga {
 	position:fixed;
-	right:-130px;
-	top:0;
-	z-index:1001;
+	left: 0;
+	z-index:1000;
+	float: left;
+	height: 50%;
+	width: auto;
+}
+
+.pink-segitiga-rel {
+	position:absolute;
+	left:0;
+	z-index:1000;
+	width: auto;
+	height: 50%;
+}
+
+.yellow-segitiga-flip, .pink-segitiga-flip {
+	position:fixed;
+	right: 0;
+	z-index:1000;
+	float: right;
+	height: 50%;
+	width: auto;
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
@@ -535,243 +487,130 @@ a.btn-social, .btn-social {
 	-ms-filter: "FlipH";
 }
 
-/*Motif Batik Tumpal Betawi*/
-.tumpal-container {
-	background-color:#fff;
-	position:absolute;
-	top:20%;
-	left:0;
+
+/* FOTO KANAN-KIRI */
+.about-foto-kanan > img {
+	position: fixed;
+	right:-40%;
+	top:-2px;
+	z-index:1001;
 	width:100%;
-	height:80%;
+	height:auto;
 }
 
-.konten-tumpaljudul {
+.sejarah-foto-kanan > img {
+	position: fixed;
+	float: right;
+	right: 0;
+	top:16%;
+	z-index:10;
+	width:60%;
+	height:auto;
+	margin: auto;
+}
+
+.motif-foto-kanan > img {
+	position: fixed;
+	right:0;
+	top:-2px;
+	z-index:10;
+	width:60%;
+	height:100%;
+}
+
+.event-foto-kanan {
+	position: relative;
+	top:100px;
+	z-index:10;
+	width:100%;
+	height:auto;
+	padding: 0 !important;
+	left: 0 !important;
+	float: left;
+}
+
+.kiat-foto-kanan > img {
+	position: relative;
+	left: 45%;
+	top:-2px;
+	z-index:1002;
+	width:auto;
+	height:590px;
+}
+
+.kiat-foto-kiri > img {
+	position: relative;
+	left: -5%;
+	top:-5px;
+	z-index:10;
+	width:auto;
+	height:588px;
+}
+
+.kiat-foto-kanan-bawah > img {
 	position:absolute;
-	top:20%;
-	left:18%;
-	font-size: 30px;
-	font-family: Comfortaa, sans-serif;
-	color:#006600;
+	right:0;
+	top:-2px;
+	z-index:1002;
+	height:592px;
+	width: auto;
 }
 
-.konten-tumpalisi {
-	position:absolute;
-	top:10%;
-	left:0;
-	width: 300px;
-	height: 400px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	font-size:14px;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-}
-
-.foto-kanan-tumpal {
+.contact-foto-kanan > img {
 	position:absolute;
 	right:-2%;
 	top:0;
 	z-index:10;
-	width:60%;
-	height:100%;
-	overflow:hidden;
+	width:auto;
+	height:588px;
 }
 
-/*Motif Batik Gunung Tumpal*/
-.gunung-container {
-	background-color:#f6d3b3  ;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.konten-gunungjudul {
-	position:absolute;
-	top:30%;
-	left:60%;
-	font-size: 30px;
-	font-family: Comfortaa, sans-serif;
-	color:#D21D5E ;
-}
-
-.konten-gunungisi {
-	position:absolute;
-	top:0;
-	left:0;
-	width: 350px;
-	height: 300px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	font-size:14px;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-}
-
-.foto-kanan-gunung {
-	position:absolute;
-	left:-5px;
-	top:0;
-	z-index:10;
-	width:100%;
-	height:100%;
-	overflow:hidden;
-}
-
-/*Motif Ondel-Ondel Pucuk Rebung*/
-.oopr-container {
-	background-color:#fff;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.konten-ooprjudul {
-	position:absolute;
-	top:20%;
-	left:18%;
-	font-size: 30px;
-	font-family: Comfortaa, sans-serif;
-	color:#EF8C1E;
-}
-
-.konten-ooprisi{
-	position:absolute;
-	top:60%;
-	left:0;
-	width: 300px;
-	height: 290px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	font-size:14px;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-}
-
-.foto-kanan-oopr {
+.monas-foto-kanan > img, .oopr-foto-kanan > img, .member-foto-kanan > img {
 	position:absolute;
 	right:-2%;
 	top:0;
 	z-index:10;
-	width:60%;
-	height:100%;
-	overflow:hidden;
+	width:auto;
+	height:588px;
 }
 
-/* Events */
-.event-container {
-	background-color:#f6d3b3  ;
+.ondel-foto-kiri > img, .gunung-foto-kanan > img {
 	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.foto-kanan-ondel {
-	position:absolute;
-	left:-2%;
+	left:-5%;
 	top:0;
 	z-index:10;
-	width:60%;
-	height:100%;
-	overflow:hidden;
+	width:auto;
+	height:588px;
 }
 
-/* Member */
-.member-container {
-	background-color:#f6d3b3;
+.tumpal-foto-kanan> img {
 	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.konten-memberjudul {
-	position:absolute;
-	top:20%;
-	left:20%;
-	font-size: 30px;
-	font-family: Comfortaa, sans-serif;
-	color:#D21D5E;
-}
-
-.logomember1 {
-	position:relative;
-	padding:0;
-}
-
-.logomember2 {
-	position:relative;
-	padding:0;
-}
-
-.konten-memberjuduljudul {
-	position:absolute;
-	top:10%;
-	left:3%;
-	width: 300px;
-	height: auto;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#D21D5E;
-	font-size:14px;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-}
-
-.konten-memberisi {
-	position:absolute;
+	right:-4%;
 	top:0;
-	left:-20%;
-	width: 300px;
-	height: 420px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	font-size:14px;
-	text-align:center;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
+	z-index:10;
+	width:auto;
+	height:588px;
+}
+
+.logomember > img {
+	position:relative;
+	padding:0;
+	left: 0;
+	width:auto;
+	height:100px;
 }
 
 .buttonnext {
-  background-color: #006600;
+  background-color: #D21D5E;
   border: none;
-  color: #FFFFFF;
+  color: #fff !important;
   text-align: center;
   font-size: 20px;
   padding: 10px;
   width: 30%;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 15px;
 }
 
 .buttonnext span {
@@ -799,35 +638,6 @@ a.btn-social, .btn-social {
   right: 0;
 }
 
-.foto-kanan-member {
-	position:absolute;
-	right:-2%;
-	top:0;
-	z-index:10;
-	width:60%;
-	height:100%;
-	overflow:hidden;
-}
-
-.member2-container {
-	background-color:#f6d3b3;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.konten-member2judul {
-	position:absolute;
-	top:5%;
-	left:60%;
-	font-size: 30px;
-	font-family: Comfortaa, sans-serif;
-	color:#EF8C1E;
-	text-align:center;
-}
-
 .logomember2 {
 	position:relative;
 	padding:0;
@@ -842,7 +652,7 @@ a.btn-social, .btn-social {
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
+	font-family: "Quicksand Book";
 	color:#EF8C1E;
 	font-size:14px;
 	text-align:center;
@@ -860,7 +670,7 @@ a.btn-social, .btn-social {
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
+	font-family: "Quicksand Book";
 	color:#000;
 	font-size:14px;
 	text-align:inherit;
@@ -917,333 +727,82 @@ a.btn-social, .btn-social {
 	overflow:hidden;
 }
 
-/*Contact*/
-.contact-container {
-	background-color:#fff;
+/* FOTO KIAT */
+.kiat-foto {
 	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.konten-contactjudul {
-	position:absolute;
-	top:30%;
-	left:18%;
-	font-size: 30px;
-	font-family: Comfortaa, sans-serif;
-	color:#D21D5E;
-}
-
-.konten-contactisi{
-	position:absolute;
-	top:10%;
-	left:0;
-	width: 300px;
-	height: 350px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	font-size:14px;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-}
-
-.foto-kanan-contact {
-	position:absolute;
-	right:-2%;
-	top:0;
-	z-index:10;
-	width:60%;
-	height:100%;
-	overflow:hidden;
-}
-
-/* Tutorial */
-.tutor-container {
-	background-color:#f6d3b3;
-	position:absolute;
-	top:20%;
-	left:0;
-	width:100%;
-	height:80%;
-}
-
-.konten-tutorjudul {
-	position:absolute;
-	margin-top:10%;
-	left:22%;
-}
-
-.konten-tutorisi{
-	position:absolute;
-	top:10%;
-	left:0;
-	width: 300px;
-	height: 430px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-}
-
-.foto-kanan-tutor {
-	position:relative;
-	left:50%;
-	top:0;
-	z-index:1002;
-	width:60%;
-	height:100%;
-	overflow:hidden;
-}
-
-.gambar-tepirel {
-	position:absolute;
-	left:-130px;
-	top:-25%;
-	z-index:1000;
-}
-
-.foto-kanan-kiat-flip {
-	position:relative;
-	left:-5%;
-	top:0;
-	z-index:10;
-	width:56%;
-	height:100%;
-	overflow:hidden;
-}
-
-.konten-kiat2isi {
-	position:absolute;
-	top:70%;
-	left:46%;
-	font-size: 14px;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000 ;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-	text-align: justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-	width: 250px;
-	height: auto;
-}
-
-.konten-kiat2isi2 {
-	position:absolute;
-	top:10%;
-	left:68%;
-	font-size: 14px;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000 ;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-	text-align: justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-	width: 200px;
-	height: auto;
-}
-
-.konten-kiat2isi3 {
-	position:absolute;
-	top:70%;
-	left:80%;
-	font-size: 14px;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000 ;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-	text-align: justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-	width: 200px;
-	height: auto;
-}
-
-.foto-tutor11 {
-	position:absolute;
-	left:48%;
-	top:5%;
 	z-index:19;
-	width:auto;
 	height:auto;
-	overflow:hidden;
 }
 
-.foto-tutor12 {
-	position:absolute;
+.kiat-atas-foto-11 {
+	left:43%;
+	top:8%;
+	width:45%;
+}
+
+.kiat-atas-foto-12 {
 	left:63%;
 	top:21%;
-	z-index:19;
-	width:auto;
-	height:auto;
-	overflow:hidden;
+	width:40%;
 }
 
-.foto-tutor13 {
-	position:absolute;
+.kiat-atas-foto-13 {
 	left:80%;
 	top:5%;
-	z-index:19;
-	width:auto;
-	height:auto;
-	overflow:hidden;
+	width:23%;
 }
 
-.ikon-tutor11 {
+.foto-kiat-bawah-21 {
+	left:4%;
+	bottom:-5px;
+	width:auto;
+	overflow: hidden;
+}
+
+.foto-kiat-bawah-22 {
+	left:35%;
+	top:3%;
+	width:auto;
+}
+
+/* ANGKA */
+.kiat-ikon {
 	position:absolute;
+	z-index:20;
+	width:20px;
+	height:20px;
+}
+
+.kiat-ikon-11 {
 	left:43%;
 	top:71%;
-	z-index:18;
-	width:20px;
-	height:20px;
-	overflow:hidden;
 }
 
-.ikon-tutor12 {
-	position:absolute;
+.kiat-ikon-12 {
 	left:65%;
 	top:11%;
-	z-index:19;
-	width:20px;
-	height:20px;
-	overflow:hidden;
 }
 
-.ikon-tutor13 {
-	position:absolute;
+.kiat-ikon-13 {
 	left:78%;
 	top:70%;
-	z-index:19;
-	width:20px;
-	height:20px;
-	overflow:hidden;
 }
 
-.konten-kiat11{
-	position:absolute;
+.kiat-ikon-21 {
+	left:7%;
 	top:10%;
-	left:30%;
-	width: 300px;
-	height: 430px;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000;
-	text-align:justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
 }
 
-.foto-kanan-kiat-bawah {
-	position:absolute;
-	right:0;
-	top:0;
-	z-index:1002;
-	width:48%;
-	height:100%;
-	overflow:hidden;
+.kiat-ikon-22 {
+	left:33%;
+	top:73%;
 }
 
-.kiat-bawah-container {
-	background-color:#f6d3b3;
+.kiat-bawah-con {
 	position:relative;
-	top:0;
+	top:-5px;
 	left:0;
 	width:100%;
 	height:100%;
 	z-index:1;
-}
-
-.kiat-bawah-isi {
-	position:absolute;
-	top:10%;
-	left:10%;
-	font-size: 14px;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000 ;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-	text-align: justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-	width: 250px;
-	height: auto;
-}
-
-.kiat-bawah-isi2 {
-	position:absolute;
-	top:73%;
-	left:35%;
-	font-size: 14px;
-	font-family: "Quicksand Book", sans-serif;
-	color:#000 ;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-	text-align: justify;
-	text-justify: auto;
-	z-index:20;
-	line-height: 1.8;
-	width: 250px;
-	height: auto;
-}
-
-.foto-kiat-bawah11 {
-	position:absolute;
-	left:10%;
-	bottom:0;
-	z-index:19;
-	width:auto;
-	height:auto;
-	overflow:hidden;
-}
-
-.foto-kiat-bawah12 {
-	position:absolute;
-	left:35%;
-	top:3%;
-	z-index:19;
-	width:auto;
-	height:auto;
-	overflow:hidden;
-}
-
-
-
-.ikon-kiat-bawah11 {
-	position:absolute;
-	left:7%;
-	top:10%;
-	z-index:18;
-	width:20px;
-	height:20px;
-	overflow:hidden;
-}
-
-.ikon-kiat-bawah12 {
-	position:absolute;
-	left:33%;
-	top:73%;
-	z-index:19;
-	width:20px;
-	height:20px;
-	overflow:hidden;
 }
