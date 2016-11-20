@@ -53,6 +53,11 @@
 			        </a>
 			    </li>
 			</ul>
+			<ul class="pagination page-pos">
+			    <li><a href="#">1</a></li>
+			    <li class="disabled"><a href="#">2</a></li>
+			    <li class="disabled"><a href="#">3</a></li>
+			</ul>
         </div>
 		
 		<!-- JS -->
