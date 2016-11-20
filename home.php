@@ -22,9 +22,19 @@
 					</div>
 					<div class="item">
 						<img src="./img/web/homepage2.png" alt="gambar2">
+						<div class="carousel-button-rm">
+							<button type="button" class="btn">
+								<a href="./kiat">Read More</a>
+							</button>
+						</div>
 					</div>
 					<div class="item">
 						<img src="./img/web/homepage3.png" alt="gambar3">
+						<div class="carousel-button-rm">
+							<button type="button" class="btn">
+								<a href="./motifbatikbetawi">Read More</a>
+							</button>
+						</div>
 					</div>
 				</div>
 
