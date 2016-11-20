@@ -6,24 +6,53 @@
 		require('./header.php');
 	?>
     <body>
-        <div class="container kbbi-con pink-con">
+        <div class="container kbbi-con">
 			<img class="pink-segitiga" src="./img/icon/ikonpink.png" alt="pinkikon"/>
 			<div class="main member-main">
 				<h1 class="pink-title"> MEMBER KAMI </h1>
-				<div class="logomember">
-					<img src="./img/logo/terogong.png" alt="member1"/>
-				</div>
-				<h5> BATIK BETAWI TEROGONG </h5>
-				<p class="member-def">
-					Jl. Terogong 3, RT.9/RW.10, Cilandak Bar. </br>
-					Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430 </br>
-					Phone: (021) 7664672 </br>
-					<a href="http://batikbetawiterogong.com/">www.batikbetawiterogong.com</a></br>
-				</p>
 			</div>
-			<div class="member-foto-kanan">
-				<img src="./img/web/member1.png" alt="about"/>
-			</div>
+			<ul class="grid-member">
+			    <li>
+			        <a class="rig-cell" href="#">
+			            <img class="grid-size" src="./img/web/member1a.png">
+			            <span class="rig-overlay"></span>
+			            <span class="rig-text">Batik Rusun Marunda</span>
+			        </a>
+			    </li>
+			    <li>
+			        <a class="rig-cell" href="#">
+			            <img class="grid-size" src="./img/web/member2a.png">
+			            <span class="rig-overlay"></span>
+			        </a>
+			    </li>
+			    <li>
+			        <a class="rig-cell" href="#">
+			            <img class="grid-size" src="./img/web/member3a.png">
+			            <span class="rig-overlay"></span>
+			        </a>
+			    </li>
+			    <li>
+			        <a class="rig-cell" href="#">
+			            <img class="grid-size" src="./img/web/member1b.png">
+			            <span class="rig-overlay"></span>
+			            <span class="rig-text">Batik Bani Said</span>
+			        </a>
+			    </li>
+			    <li>
+			        <a class="rig-cell" href="#">
+			            <img class="grid-size" src="./img/web/member2b.png">
+			            <span class="rig-overlay"></span>
+			            <span class="rig-text">Warung None Batik Betawi</span>
+			        </a>
+			    </li>
+			    <li>
+			        <a class="rig-cell" href="#">
+			            <img class="grid-size" src="./img/web/member3b.png">
+			            <span class="rig-overlay"></span>
+			            <span class="rig-text">Gandaria Batik Betawi</span>
+			        </a>
+			    </li>
+			</ul>
         </div>
 		
 		<!-- JS -->
