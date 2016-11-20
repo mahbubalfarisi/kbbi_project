@@ -1,13 +1,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-		<!-- Judul tab browser -->
 		<title>Home - KBBI</title>
     </head>
-		<?php
-			require('./header.php');
-		?>	
+	<?php
+		require('./header.php');
+	?>	
     <body>
-        <div class="container">
+        <div class="container kbbi-con home-con">
 			<div id="carousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -31,11 +30,11 @@
 
 				<!-- Controls -->
 				<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
 				</a>
 				<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 				</a>
 			</div>     
