@@ -1,11 +1,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
 		<title>Home - KBBI</title>
+    	<?php
+			require('./scripts.php');
+		?>
     </head>
-	<?php
-		require('./header.php');
-	?>	
     <body>
+	<?php
+		require('./headnav.php');
+		require('./scriptfont.php');
+	?>
         <div class="container kbbi-con home-con">
 			<div id="carousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -49,10 +53,5 @@
 				</a>
 			</div>     
         </div>
-		
-		<!-- JS -->
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/jquery-3.1.1.js"></script>
-		<script src="./js/carousel.js"></script>
     </body>
 </html>
