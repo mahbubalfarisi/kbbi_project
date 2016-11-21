@@ -1,11 +1,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
 		<title>Event - KBBI</title>
+    	<?php
+			require('./scripts.php');
+		?>
     </head>
-	<?php
-		require('./header.php');
-	?>
     <body>
+	<?php
+		require('./headnav.php');
+		require('./scriptfont.php');
+	?>
     	<div class="row">
 			<img class="event-foto-kanan" src="./img/web/event.png" alt="about"/>
 		</div>
@@ -38,9 +42,5 @@
 				</div>
 			</div>
 		</div>
-		
-		<!-- JS -->
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/jquery-3.1.1.js"></script>
     </body>
 </html>
