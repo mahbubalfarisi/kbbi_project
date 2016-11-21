@@ -2,10 +2,14 @@
     <head>
 		<title>Sejarah Batik Betawi - KBBI</title>
 		<?php
-			require('./header.php');
+			require('./scripts.php');
 		?>
     </head>
     <body>
+	<?php
+		require('./headnav.php');
+		require('./scriptfont.php');
+	?>
         <div class="container kbbi-con white-con">
 			<img class="yellow-segitiga" src="./img/icon/ikonyellow.png" alt="yellowikon"/>
 			<div class="main sejarah-main">
@@ -26,9 +30,5 @@
 				<img src="./img/web/fotosejarahbetawi.png" alt="about"/>
 			</div>
         </div>
-		
-		<!-- JS -->
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/jquery-3.1.1.js"></script>
     </body>
 </html>
