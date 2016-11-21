@@ -21,7 +21,7 @@
 					</h3>
 					<h4 class="event-def">
 						Sonny Muclishon dan Anne Avantie </br>
-						''Batik Betawi Punya Cerite''
+						"Batik Betawi Punya Cerite"
 					</h4>
 					<h6 class="event-def">
 						15 Januari 2017 </br>
@@ -33,7 +33,7 @@
 						EXHIBITION
 					</h3>
 					<h4 class="event-def">
-						''Batik Betawi Kuno''
+						"Batik Betawi Kuno"
 					</h4>
 					<h6 class="event-def">
 						15-16 Januari 2017 </br>
