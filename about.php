@@ -1,11 +1,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Tentang Kami - KBBI</title>
-	</head>
-	<?php
-		require('./header.php');
-	?>
+		<?php
+			require('./scripts.php');
+		?>
+    </head>
     <body>
+	<?php
+		require('./headnav.php');
+		require('./scriptfont.php');
+	?>
         <div class="container kbbi-con pink-con">
 			<img class="pink-segitiga" src="./img/icon/ikonpink.png" alt="pinkikon"/>
 			<div class="main about-main">
@@ -20,9 +24,5 @@
 				<img src="./img/web/tentangkami.png" alt="about"/>
 			</div>
         </div>
-		
-		<!-- JS -->
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/jquery-3.1.1.js"></script>
     </body>
 </html>
