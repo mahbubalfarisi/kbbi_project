@@ -1,11 +1,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
 		<title>Motif Batik Betawi - KBBI</title>
+    	<?php
+			require('./scripts.php');
+		?>
     </head>
-	<?php
-		require('./header.php');
-	?>
     <body>
+	<?php
+		require('./headnav.php');
+		require('./scriptfont.php');
+	?>
         <div class="container kbbi-con pink-con">
 			<img class="pink-segitiga" src="./img/icon/ikonpink.png" alt="pinkikon"/>
 			<div class="main motif-main">
@@ -21,9 +25,5 @@
 				<img src="./img/web/motifbatikbetawi.png" alt="about" height="100%" width="100%"/>
 			</div>
         </div>
-		
-		<!-- JS -->
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/jquery-3.1.1.js"></script>
     </body>
 </html>
