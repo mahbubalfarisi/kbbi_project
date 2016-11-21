@@ -33,9 +33,9 @@
     this.$active     =
     this.$items      = null
 
-    //this.options.pause == 'hover' && this.$element
-      //.on('mouseenter', $.proxy(this.pause, this))
-      //.on('mouseleave', $.proxy(this.cycle, this))
+    this.options.pause == 'hover' && this.$element
+      .on('mouseenter', $.proxy(this.pause, this))
+      .on('mouseleave', $.proxy(this.cycle, this))
   }
 
   Carousel.DEFAULTS = {
@@ -141,17 +141,17 @@
           that.sliding = false
           setTimeout(function () { that.$element.trigger('slid') }, 0)
         })
-        .emulateTransitionEnd(600)
+        .emulateTransitionEnd(0)
     } else if(this.$element.hasClass('slide')) {
         this.$element.trigger(e)
         if (e.isDefaultPrevented()) return
-        $active.animate({left: (direction == 'right' ? '100%' : '-100%')}, 600, function(){
+        $active.animate({left: (direction == 'right' ? '100%' : '-100%')}, 1000, function(){
             $active.removeClass('active')
             that.sliding = false
             setTimeout(function () { that.$element.trigger('slid') }, 0)
-        })
         $next.addClass(type).css({left: (direction == 'right' ? '-100%' : '100%')}).animate({left: 0}, 0,  function(){
             $next.removeClass(type).addClass('active')
+        })
         })
     } else {
       this.$element.trigger(e)
