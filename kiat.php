@@ -2,11 +2,15 @@
     <head>
 		<!-- Judul tab browser -->
 		<title>Kiat Berkain Cantik - KBBI</title>
-    </head>
-		<?php
-			require('./header.php');
+    	<?php
+			require('./scripts.php');
 		?>
+    </head>
     <body>
+	<?php
+		require('./headnav.php');
+		require('./scriptfont.php');
+	?>
         <div class="container kbbi-con pink-con">
 			<img class="pink-segitiga-rel" src="./img/icon/ikonpink.png" alt="pinkikon"/>
 			
@@ -89,9 +93,6 @@
 					</div>
 				</div>
 			</div>
-		</div>		
-		<!-- JS -->
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/jquery-3.1.1.js"></script>
+		</div>
     </body>
 </html>
