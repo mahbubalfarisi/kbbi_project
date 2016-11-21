@@ -1,12 +1,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-		<!-- Judul tab browser -->
 		<title>Motif Batik Monas - KBBI</title>
+    	<?php
+			require('./scripts.php');
+		?>
     </head>
-	<?php
-		require('./header.php');
-	?>
     <body>
+	<?php
+		require('./headnav.php');
+		require('./scriptfont.php');
+	?>
         <div class="container kbbi-con white-con">
 			<img class="yellow-segitiga" src="./img/icon/ikonyellow.png" alt="yellowikon"/>
 			<div class="main monas-main">
@@ -20,9 +23,5 @@
 				<img src="./img/web/batikmonas.png" alt="about"/>
 			</div>
         </div>
-		
-		<!-- JS -->
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/jquery-3.1.1.js"></script>
     </body>
 </html>
