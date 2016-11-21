@@ -30,7 +30,7 @@
   src: url("./fonts/Quicksand_Light_Oblique.otf") format("opentype");
 }
 @font-face {
-  font-family: 'King-Basil-Lite';
+  font-family: King Basil;
   src: url("./fonts/King-Basil-Lite.otf") format("OpenType");
 }
 
@@ -58,7 +58,7 @@ h3 {
 
 h4 {
 	font-size: 18px;
-	font-family: Quicksand_Bold !important;
+	font-family: Quicksand Bold !important;
 	color: #3B2314;
 	font-weight: bold;
 }
@@ -70,7 +70,7 @@ h5 {
 
 h6 {
 	font-size: 17px;
-	font-family: Quicksand_Bold !important;
+	font-family: Quicksand Bold !important;
 	color: #3B2314;
 	font-weight: lighter;
 }
@@ -157,7 +157,7 @@ p.sejarah-def {
 
 p.kiat-def{
 	top:10%;
-	width: 300px;
+	width: 350px;
 	height: 430px;
 }
 
@@ -213,7 +213,7 @@ p.kiat-bawah-isi-21 {
 	position:absolute;
 	top:10%;
 	left:10%;
-	width: 250px;
+	width: 280px;
 	height: auto;
 }
 
@@ -258,7 +258,7 @@ h1.green-title {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: transparent;
     width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	font-family: "Comfortaa", Arial;
@@ -271,10 +271,11 @@ h1.green-title {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    background-color: #fff;
 }
 
 .dropdown-content a:hover {
-	background-color: rgba(246, 211, 179,.8);
+	background-color: rgba(246, 211, 179,.9);
 	color: #D21D5E;
 }
 
@@ -398,6 +399,10 @@ a.btn-social, .btn-social {
 	z-index:888;
 }
 
+.carousel-indicators {
+	z-index: 999;
+}
+
 .carousel-inner {
 	width: auto;
 	margin-left: 0;
@@ -412,10 +417,10 @@ a.btn-social, .btn-social {
 	left:0;
 	height: 100%;
 	width: 100%;
-	-webkit-transition:.6s ease-in-out left;
-	-moz-transition: 0.6s ease-in-out left;
-	-o-transition:.6s ease-in-out left;
-	transition:.6s ease-in-out left;
+	-webkit-transition:.9s ease-in left;
+	-moz-transition: 0.9s ease-in left;
+	-o-transition:.9s ease-in left;
+	transition:.9s ease-in left;
 }
 
 .carousel-control {
@@ -440,6 +445,21 @@ a.btn-social, .btn-social {
 	background-image: none;
 }
 
+.carousel-button-rm {
+	position: fixed;
+	top: 400px;
+	left: 27%;
+	z-index: 9999;
+}
+
+.carousel-button-rm .btn {
+	background-color: #fff;
+}
+
+.carousel-button-rm .btn > a {
+	background-color: #fff;
+	color: #D21D5E !important;
+}
 
 /* CONTAINER */
 .kbbi-con {
@@ -481,12 +501,12 @@ a.btn-social, .btn-social {
 
 .kiat-main {
 	margin-top:10%;
-	left:22%;
+	left:18%;
 	height:auto;
 }
 
 .contact-main {
-	top:30%;
+	top:20%;
 	left:18%;
 }
 
@@ -557,7 +577,7 @@ a.btn-social, .btn-social {
 	right:-5%;
 	top:-2px;
 	z-index:1001;
-	height:100%;
+	height:705px;
 	width:auto;
 }
 
@@ -565,10 +585,10 @@ a.btn-social, .btn-social {
 	position: fixed;
 	float: right;
 	right: 0;
-	top:16%;
+	top:15%;
 	z-index:10;
-	width:60%;
-	height:auto;
+	width:auto;
+	height:595px;
 	margin: auto;
 }
 
@@ -578,7 +598,7 @@ a.btn-social, .btn-social {
 	top:-2px;
 	z-index:10;
 	width:60%;
-	height:100%;
+	height:705px;
 }
 
 .event-foto-kanan {
@@ -631,7 +651,7 @@ a.btn-social, .btn-social {
 .monas-foto-kanan > img, .oopr-foto-kanan > img {
 	position:absolute;
 	right:-2%;
-	top:0;
+	top:-2px;
 	z-index:10;
 	width:auto;
 	height:588px;
@@ -640,10 +660,10 @@ a.btn-social, .btn-social {
 .ondel-foto-kiri > img, .gunung-foto-kanan > img {
 	position:absolute;
 	left:-5%;
-	top:0;
+	top:-4px;
 	z-index:10;
 	width:auto;
-	height:588px;
+	height:590px;
 }
 
 .tumpal-foto-kanan> img {
@@ -909,18 +929,21 @@ a.btn-social, .btn-social {
 .rig-overlay {
     position: absolute;
     display:block;
-    top: 50%;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    height: 50%;
+    height: 100%;
     background: #000 no-repeat center 20%;
     background-size:50px 50px;
     opacity:0;
-    filter:alpha(opacity=0);/*For IE6 - IE8*/
-    transition:all 0.6s;
+	background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.65) 30%, rgba(0,0,0,0.08) 65%, rgba(36,36,36,0) 70%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.65) 30%,rgba(0,0,0,0.08) 65%,rgba(36,36,36,0) 70%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(0,0,0,0.65) 30%,rgba(0,0,0,0.08) 65%,rgba(36,36,36,0) 70%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 .grid-member li:hover .rig-overlay {
     opacity:0.5;
 }
@@ -930,12 +953,12 @@ a.btn-social, .btn-social {
     padding:0 30px;
     box-sizing:border-box;
     position:absolute;
-    left:0;
+    left:-18px;
     width:100%;
     text-align:left;
     top: 60%;
     font-size:14px;
-    font-family: "King-Basil-Lite", sans-serif;
+    font-family: King Basil, sans-serif;
     font-weight:normal!important;
     color:#F1F1F2;
     opacity:0;
